@@ -1,0 +1,6 @@
+{
+  "name": "GoPace",
+  "description": "Aplikasi transportasi online, kuliner lokal Merauke, kurir UMKM, jastip, portal Mitra Driver & Usaha.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

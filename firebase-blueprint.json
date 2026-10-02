@@ -1,0 +1,47 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile for customer or driver authenticated in GoPace",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "name": { "type": "string" },
+        "role": { "type": "string", "enum": ["CUSTOMER", "DRIVER", "MERCHANT", "ADMIN"] },
+        "walletBalance": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "phoneNumber", "role"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Ride-hailing, food delivery or courier order in Merauke",
+      "type": "object",
+      "properties": {
+        "orderId": { "type": "string" },
+        "customerId": { "type": "string" },
+        "driverId": { "type": "string" },
+        "serviceType": { "type": "string" },
+        "pickupLocation": { "type": "string" },
+        "destinationLocation": { "type": "string" },
+        "benchmarkNote": { "type": "string" },
+        "totalFare": { "type": "number" },
+        "paymentMethod": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["orderId", "customerId", "serviceType", "pickupLocation", "destinationLocation", "totalFare", "status"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "User personal profile details"
+    },
+    "/orders/{orderId}": {
+      "schema": { "$ref": "#/entities/Order" },
+      "description": "Trip and delivery orders"
+    }
+  }
+}

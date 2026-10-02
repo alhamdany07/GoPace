@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Outer ring accent -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M35,39 A 23 23 0 1 1 73 57" />
+
+    <!-- Center dot (Gojek-like iconic pin) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54m-8,0a8,8 0,1,1 16,0a8,8 0,1,1 -16,0" />
+
+    <!-- Speed Pace Chevron Arrow -->
+    <path
+        android:fillColor="#FFD200"
+        android:pathData="M73,34 L82,43 L73,52 L77,52 L86,43 L77,34 Z" />
+
+    <!-- Motion trail bottom -->
+    <path
+        android:strokeColor="#FFD200"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M32,71 L56,71" />
+
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M40,78 L68,78" />
+</vector>

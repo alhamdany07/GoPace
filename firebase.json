@@ -1,0 +1,8 @@
+{
+  "firestore": [
+    {
+      "database": "ai-studio-android-gopace-97847943-13fc-4b86-bd7d-6ee8c7d4c444",
+      "rules": "firestore.rules"
+    }
+  ]
+}
